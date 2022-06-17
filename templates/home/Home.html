@@ -1,0 +1,41 @@
+{% load static %}
+
+{% block contant%}
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+    </head>
+    <div class="div_studen"> <h1>abd_alrhman_108964,,,,yaser_122441,,,,amira_108684,,,,halima_108730</h1>
+      
+    </div>
+   
+    <main class="main_f"><div class="div_main">
+        <div class="heading">  <h1 > Enter graph connections (Actual distance)</h1></div>
+      <input type="text" name="test" id ="city1" placeholder="City" >
+      <input type="number" name="test" id ="connect" placeholder="distance">
+        <input type="text" name="test" id ="city2" placeholder="City">
+        <button  class="addBtn" id="add_con" >Add</button>
+        <script src="{% static 'js/ho.js'%}"></script> 
+        <div><output class="add_out" id="add_con_out"></output></div>
+         </div>
+         <div class="div_h">
+          
+          <div class="heading">  <h1 > Enter heuristics (straight line distance)</h1></div>
+         <input type="text" name="test" id ="city_inf" placeholder="City" >
+           <input type="number" name="test" id ="Inference" placeholder="heuristics">
+             <button  class="addBtn" id="add_inf" >Add</button>
+             <script src="{% static 'js/ho.js'%}"></script> 
+             <div><output class="add_out" id="add_inf_out"></output></div>
+             </div>
+            </main>
+             <div class="div_out">
+              <div class="heading"> 
+                <h1 >Enter Start point and  End point </h1>
+               </div>
+                <input type="text" name="test" id ="start" placeholder="Start" >
+                <input type="text" name="test" id ="end" placeholder="End">
+                <button  class="showbtn" id="showbtn" >Show short path</button>
+                <script src="{% static 'js/ho.js'%}"></script> 
+                <div><output class="path_out" id="path_out"></output></div>
+                 </div>
+{% endblock contant%}
